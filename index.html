@@ -27,25 +27,22 @@
 
   <main>
     <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Livraison premium pour PME en Suisse romande</p>
-          <h1>Livraison de colis rapide pour les entreprises en Suisse romande</h1>
-          <p class="lead">Colixo aide les entreprises, commerces et PME à expédier leurs colis avec plus de fluidité. Notre service de livraison locale et régionale couvre Genève, Lausanne, Fribourg, Neuchâtel et le Valais avec une approche simple, réactive et professionnelle.</p>
-          <div class="cta-row">
-            <a class="btn" href="contact.html">Demander un devis</a>
-            <a class="btn btn-secondary" href="tarifs.html">Voir les tarifs</a>
+      <div class="container hero-content">
+        <span class="hero-badge" id="hero-badge">Livraison en Suisse romande</span>
+        <h1 id="hero-title">Votre livraison de colis, simple et rapide</h1>
+        <p class="lead" id="hero-text">Une solution flexible en Suisse romande pour particuliers et entreprises.</p>
+        <div class="hero-actions">
+          <a id="hero-cta" class="btn cta-primary" href="contact.html">Être contacté</a>
+          <a class="btn btn-secondary cta-secondary" href="tarifs.html">Voir les tarifs</a>
+        </div>
+        <div class="segment-box">
+          <p class="segment-label">Vous êtes plutôt :</p>
+          <div class="segment-buttons">
+            <button type="button" onclick="setSegment('business')">Une entreprise</button>
+            <button type="button" onclick="setSegment('private')">Un particulier</button>
+            <button type="button" onclick="setSegment('reset')">Réinitialiser</button>
           </div>
         </div>
-        <aside class="hero-card">
-          <h2>Pourquoi choisir Colixo</h2>
-          <ul class="check-list">
-            <li>Collecte sur site pour les entreprises</li>
-            <li>Livraison express et planifiée</li>
-            <li>Interlocuteur unique pour vos expéditions</li>
-            <li>Couverture locale en Suisse romande</li>
-          </ul>
-        </aside>
       </div>
     </section>
 
