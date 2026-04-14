@@ -148,6 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
       text.textContent = 'Colixo aide les entreprises de Suisse romande à expédier leurs colis avec plus de souplesse, de réactivité et de simplicité.';
       cta.textContent = 'Demander un devis entreprise';
       cta.href = 'contact.html?segment=business';
+      cta.setAttribute('data-segment', 'business');
       return;
     }
 
@@ -157,6 +158,7 @@ document.addEventListener('DOMContentLoaded', function () {
       text.textContent = 'Une solution claire, rapide et humaine pour vos envois ponctuels et vos besoins de livraison du quotidien.';
       cta.textContent = 'Envoyer un colis';
       cta.href = 'contact.html?segment=private';
+      cta.setAttribute('data-segment', 'private');
       return;
     }
 
@@ -165,6 +167,7 @@ document.addEventListener('DOMContentLoaded', function () {
     text.textContent = 'Une solution flexible en Suisse romande pour particuliers et entreprises.';
     cta.textContent = 'Être contacté';
     cta.href = 'contact.html';
+    cta.setAttribute('data-segment', 'mixed');
   }
 
   function bindTracking(profile) {
